@@ -20,7 +20,11 @@ public class Main {
                 } else if (MIN_COMMAND.equals(command)) {
                     MatrixCalculator.minimumElementMethod(reader);
                 } else if (HELP_COMMAND.equals(command)) {
-                    System.out.println("Команды:\nnw - метод СЗ угла\nmin - метод минимального элемента\nexit - выход");
+                    System.out.println("""
+                            Команды:
+                            nw - метод СЗ угла
+                            min - метод минимального элемента
+                            exit - выход""");
                 } else if (EXIT_COMMAND.equals(command)) {
                     break;
                 } else {

@@ -25,19 +25,6 @@ public class Matrix {
         return prices;
     }
 
-    public boolean empty() {
-        int sum = 0;
-
-        for (int i = 0; i < departureCount; ++i) {
-            sum += stocks[i];
-        }
-        for (int i = 0; i < destinationCount; ++i) {
-            sum += needs[i];
-        }
-
-        return sum == 0;
-    }
-
     public Matrix(int departureCount, int destinationCount, int[] stocks, int[] needs, int[][] prices) {
         this.departureCount = departureCount;
         this.destinationCount = destinationCount;
